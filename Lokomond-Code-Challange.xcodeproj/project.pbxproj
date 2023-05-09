@@ -28,6 +28,12 @@
 		DE4A55FC2A0A4D440071F7BC /* BamaProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4A55F92A0A4D440071F7BC /* BamaProgressView.swift */; };
 		DE4A55FF2A0A4D930071F7BC /* Dependencies in Frameworks */ = {isa = PBXBuildFile; productRef = DE4A55FE2A0A4D930071F7BC /* Dependencies */; };
 		DE4A56022A0A4E4D0071F7BC /* RoundedBorderModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4A56012A0A4E4D0071F7BC /* RoundedBorderModifier.swift */; };
+		DE4A56262A0A59130071F7BC /* RateEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4A56252A0A59130071F7BC /* RateEntity.swift */; };
+		DE4A56422A0A5A8F0071F7BC /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4A56292A0A5A8F0071F7BC /* Persistence.swift */; };
+		DE4A565B2A0A5F8B0071F7BC /* FetchResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4A565A2A0A5F8B0071F7BC /* FetchResultController.swift */; };
+		DE4A565E2A0A5FC70071F7BC /* lokomond.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DE4A565C2A0A5FC70071F7BC /* lokomond.xcdatamodeld */; };
+		DE4A56622A0A604C0071F7BC /* RateCDEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4A56602A0A604C0071F7BC /* RateCDEntity+CoreDataClass.swift */; };
+		DE4A56632A0A604C0071F7BC /* RateCDEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4A56612A0A604C0071F7BC /* RateCDEntity+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +59,12 @@
 		DE4A55F82A0A4D440071F7BC /* ErrorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		DE4A55F92A0A4D440071F7BC /* BamaProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BamaProgressView.swift; sourceTree = "<group>"; };
 		DE4A56012A0A4E4D0071F7BC /* RoundedBorderModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedBorderModifier.swift; sourceTree = "<group>"; };
+		DE4A56252A0A59130071F7BC /* RateEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateEntity.swift; sourceTree = "<group>"; };
+		DE4A56292A0A5A8F0071F7BC /* Persistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		DE4A565A2A0A5F8B0071F7BC /* FetchResultController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchResultController.swift; sourceTree = "<group>"; };
+		DE4A565D2A0A5FC70071F7BC /* lokomond.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = lokomond.xcdatamodel; sourceTree = "<group>"; };
+		DE4A56602A0A604C0071F7BC /* RateCDEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RateCDEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DE4A56612A0A604C0071F7BC /* RateCDEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RateCDEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +98,7 @@
 		DE4A55AF2A0A3FB60071F7BC /* Lokomond-Code-Challange */ = {
 			isa = PBXGroup;
 			children = (
+				DE4A56242A0A59040071F7BC /* Entities */,
 				DE4A55F52A0A4D270071F7BC /* Presentation */,
 				DE4A55DF2A0A4C710071F7BC /* DataLayer */,
 				DE4A55BF2A0A419A0071F7BC /* DesignSystem */,
@@ -153,6 +166,7 @@
 		DE4A55E02A0A4C7B0071F7BC /* DataSources */ = {
 			isa = PBXGroup;
 			children = (
+				DE4A56272A0A5A8F0071F7BC /* Persistence */,
 				DE4A55E12A0A4C8A0071F7BC /* Network */,
 			);
 			path = DataSources;
@@ -213,6 +227,34 @@
 				DE4A55F62A0A4D340071F7BC /* Subviews */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		DE4A56242A0A59040071F7BC /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				DE4A56252A0A59130071F7BC /* RateEntity.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		DE4A56272A0A5A8F0071F7BC /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				DE4A565F2A0A602A0071F7BC /* CDEntities */,
+				DE4A56292A0A5A8F0071F7BC /* Persistence.swift */,
+				DE4A565A2A0A5F8B0071F7BC /* FetchResultController.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		DE4A565F2A0A602A0071F7BC /* CDEntities */ = {
+			isa = PBXGroup;
+			children = (
+				DE4A56602A0A604C0071F7BC /* RateCDEntity+CoreDataClass.swift */,
+				DE4A56612A0A604C0071F7BC /* RateCDEntity+CoreDataProperties.swift */,
+				DE4A565C2A0A5FC70071F7BC /* lokomond.xcdatamodeld */,
+			);
+			path = CDEntities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,20 +336,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE4A56632A0A604C0071F7BC /* RateCDEntity+CoreDataProperties.swift in Sources */,
+				DE4A565B2A0A5F8B0071F7BC /* FetchResultController.swift in Sources */,
 				DE4A55FA2A0A4D440071F7BC /* PageLoadState.swift in Sources */,
 				DE4A55B32A0A3FB60071F7BC /* ContentView.swift in Sources */,
 				DE4A55F22A0A4C8A0071F7BC /* NetworkServices.swift in Sources */,
 				DE4A55EC2A0A4C8A0071F7BC /* StatusCode.swift in Sources */,
+				DE4A56262A0A59130071F7BC /* RateEntity.swift in Sources */,
 				DE4A55FC2A0A4D440071F7BC /* BamaProgressView.swift in Sources */,
 				DE4A55ED2A0A4C8A0071F7BC /* GateWays.swift in Sources */,
 				DE4A55C52A0A42EB0071F7BC /* Images.swift in Sources */,
+				DE4A56422A0A5A8F0071F7BC /* Persistence.swift in Sources */,
 				DE4A55EF2A0A4C8A0071F7BC /* HTTPMethod.swift in Sources */,
+				DE4A565E2A0A5FC70071F7BC /* lokomond.xcdatamodeld in Sources */,
 				DE4A55C22A0A41B40071F7BC /* Fonts.swift in Sources */,
 				DE4A55EE2A0A4C8A0071F7BC /* URLSession++APITask.swift in Sources */,
 				DE4A55F02A0A4C8A0071F7BC /* API.swift in Sources */,
 				DE4A55B12A0A3FB60071F7BC /* Lokomond_Code_ChallangeApp.swift in Sources */,
 				DE4A55FB2A0A4D440071F7BC /* ErrorView.swift in Sources */,
 				DE4A56022A0A4E4D0071F7BC /* RoundedBorderModifier.swift in Sources */,
+				DE4A56622A0A604C0071F7BC /* RateCDEntity+CoreDataClass.swift in Sources */,
 				DE4A55F12A0A4C8A0071F7BC /* NetworkError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -541,6 +589,19 @@
 			productName = Dependencies;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		DE4A565C2A0A5FC70071F7BC /* lokomond.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DE4A565D2A0A5FC70071F7BC /* lokomond.xcdatamodel */,
+			);
+			currentVersion = DE4A565D2A0A5FC70071F7BC /* lokomond.xcdatamodel */;
+			path = lokomond.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = DE4A55A52A0A3FB60071F7BC /* Project object */;
 }
