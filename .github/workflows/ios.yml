@@ -26,6 +26,6 @@ jobs:
       matrix:
         include:
           - destination: 'platform=iOS Simulator,name=iPhone 14'
-            runsOn: macos-12
-            xcode: "Xcode_14.2.app"
-            name: "iPhone 14, iOS Latest, Xcode 14.2"
+            runsOn: macos-13
+            xcode: "Xcode_14.3.app"
+            name: "iPhone 14, iOS Latest, Xcode 14.3"
