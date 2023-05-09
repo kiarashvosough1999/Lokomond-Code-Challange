@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE3920832A0AC9960087BA6E /* HeadingTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3920822A0AC9960087BA6E /* HeadingTitleView.swift */; };
 		DE4A55B12A0A3FB60071F7BC /* Lokomond_Code_ChallangeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4A55B02A0A3FB60071F7BC /* Lokomond_Code_ChallangeApp.swift */; };
 		DE4A55B32A0A3FB60071F7BC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4A55B22A0A3FB60071F7BC /* ContentView.swift */; };
 		DE4A55B52A0A3FB70071F7BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE4A55B42A0A3FB70071F7BC /* Assets.xcassets */; };
@@ -27,16 +28,24 @@
 		DE4A55FB2A0A4D440071F7BC /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4A55F82A0A4D440071F7BC /* ErrorView.swift */; };
 		DE4A55FC2A0A4D440071F7BC /* BamaProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4A55F92A0A4D440071F7BC /* BamaProgressView.swift */; };
 		DE4A55FF2A0A4D930071F7BC /* Dependencies in Frameworks */ = {isa = PBXBuildFile; productRef = DE4A55FE2A0A4D930071F7BC /* Dependencies */; };
-		DE4A56022A0A4E4D0071F7BC /* RoundedBorderModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4A56012A0A4E4D0071F7BC /* RoundedBorderModifier.swift */; };
 		DE4A56262A0A59130071F7BC /* RateEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4A56252A0A59130071F7BC /* RateEntity.swift */; };
 		DE4A56422A0A5A8F0071F7BC /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4A56292A0A5A8F0071F7BC /* Persistence.swift */; };
 		DE4A565B2A0A5F8B0071F7BC /* FetchResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4A565A2A0A5F8B0071F7BC /* FetchResultController.swift */; };
 		DE4A565E2A0A5FC70071F7BC /* lokomond.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DE4A565C2A0A5FC70071F7BC /* lokomond.xcdatamodeld */; };
 		DE4A56622A0A604C0071F7BC /* RateCDEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4A56602A0A604C0071F7BC /* RateCDEntity+CoreDataClass.swift */; };
 		DE4A56632A0A604C0071F7BC /* RateCDEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4A56612A0A604C0071F7BC /* RateCDEntity+CoreDataProperties.swift */; };
+		DEEC397B2A0ABF0A00D36AB1 /* CurrencyRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEC397A2A0ABF0A00D36AB1 /* CurrencyRowView.swift */; };
+		DEEC397D2A0ABF4900D36AB1 /* ColorAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEEC397C2A0ABF4900D36AB1 /* ColorAssets.xcassets */; };
+		DEEC397F2A0AC01600D36AB1 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEC397E2A0AC01600D36AB1 /* Colors.swift */; };
+		DEEC39812A0AC3D900D36AB1 /* RoundedRectangleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEC39802A0AC3D900D36AB1 /* RoundedRectangleModifier.swift */; };
+		DEEC39832A0AC42400D36AB1 /* RoundedBorderedModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEC39822A0AC42400D36AB1 /* RoundedBorderedModifier.swift */; };
+		DEEC39852A0AC65900D36AB1 /* StatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEC39842A0AC65900D36AB1 /* StatusView.swift */; };
+		DEEC39892A0AC71E00D36AB1 /* RatePageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEC39882A0AC71E00D36AB1 /* RatePageViewModel.swift */; };
+		DEEC398B2A0AC72800D36AB1 /* RatePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEC398A2A0AC72800D36AB1 /* RatePageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DE3920822A0AC9960087BA6E /* HeadingTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingTitleView.swift; sourceTree = "<group>"; };
 		DE4A55AD2A0A3FB60071F7BC /* Lokomond-Code-Challange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lokomond-Code-Challange.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE4A55B02A0A3FB60071F7BC /* Lokomond_Code_ChallangeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lokomond_Code_ChallangeApp.swift; sourceTree = "<group>"; };
 		DE4A55B22A0A3FB60071F7BC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,13 +67,20 @@
 		DE4A55F72A0A4D440071F7BC /* PageLoadState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageLoadState.swift; sourceTree = "<group>"; };
 		DE4A55F82A0A4D440071F7BC /* ErrorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		DE4A55F92A0A4D440071F7BC /* BamaProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BamaProgressView.swift; sourceTree = "<group>"; };
-		DE4A56012A0A4E4D0071F7BC /* RoundedBorderModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedBorderModifier.swift; sourceTree = "<group>"; };
 		DE4A56252A0A59130071F7BC /* RateEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateEntity.swift; sourceTree = "<group>"; };
 		DE4A56292A0A5A8F0071F7BC /* Persistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		DE4A565A2A0A5F8B0071F7BC /* FetchResultController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchResultController.swift; sourceTree = "<group>"; };
 		DE4A565D2A0A5FC70071F7BC /* lokomond.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = lokomond.xcdatamodel; sourceTree = "<group>"; };
 		DE4A56602A0A604C0071F7BC /* RateCDEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RateCDEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
 		DE4A56612A0A604C0071F7BC /* RateCDEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RateCDEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DEEC397A2A0ABF0A00D36AB1 /* CurrencyRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRowView.swift; sourceTree = "<group>"; };
+		DEEC397C2A0ABF4900D36AB1 /* ColorAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ColorAssets.xcassets; sourceTree = "<group>"; };
+		DEEC397E2A0AC01600D36AB1 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		DEEC39802A0AC3D900D36AB1 /* RoundedRectangleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedRectangleModifier.swift; sourceTree = "<group>"; };
+		DEEC39822A0AC42400D36AB1 /* RoundedBorderedModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedBorderedModifier.swift; sourceTree = "<group>"; };
+		DEEC39842A0AC65900D36AB1 /* StatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusView.swift; sourceTree = "<group>"; };
+		DEEC39882A0AC71E00D36AB1 /* RatePageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatePageViewModel.swift; sourceTree = "<group>"; };
+		DEEC398A2A0AC72800D36AB1 /* RatePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatePageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +117,6 @@
 				DE4A56242A0A59040071F7BC /* Entities */,
 				DE4A55F52A0A4D270071F7BC /* Presentation */,
 				DE4A55DF2A0A4C710071F7BC /* DataLayer */,
-				DE4A55BF2A0A419A0071F7BC /* DesignSystem */,
 				DE4A55B02A0A3FB60071F7BC /* Lokomond_Code_ChallangeApp.swift */,
 				DE4A55B22A0A3FB60071F7BC /* ContentView.swift */,
 				DE4A55B62A0A3FB70071F7BC /* Lokomond_Code_Challange.entitlements */,
@@ -121,9 +136,12 @@
 		DE4A55BF2A0A419A0071F7BC /* DesignSystem */ = {
 			isa = PBXGroup;
 			children = (
+				DE4A56032A0A4F6C0071F7BC /* Components */,
 				DE4A55C32A0A42D00071F7BC /* Images */,
 				DE4A55C02A0A41AB0071F7BC /* Fonts */,
 				DE4A55B42A0A3FB70071F7BC /* Assets.xcassets */,
+				DEEC397C2A0ABF4900D36AB1 /* ColorAssets.xcassets */,
+				DEEC397E2A0AC01600D36AB1 /* Colors.swift */,
 			);
 			path = DesignSystem;
 			sourceTree = "<group>";
@@ -197,7 +215,8 @@
 		DE4A55F52A0A4D270071F7BC /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				DE4A56032A0A4F6C0071F7BC /* Components */,
+				DEEC39862A0AC70C00D36AB1 /* Pages */,
+				DE4A55BF2A0A419A0071F7BC /* DesignSystem */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -208,6 +227,9 @@
 				DE4A55F92A0A4D440071F7BC /* BamaProgressView.swift */,
 				DE4A55F82A0A4D440071F7BC /* ErrorView.swift */,
 				DE4A55F72A0A4D440071F7BC /* PageLoadState.swift */,
+				DEEC397A2A0ABF0A00D36AB1 /* CurrencyRowView.swift */,
+				DEEC39842A0AC65900D36AB1 /* StatusView.swift */,
+				DE3920822A0AC9960087BA6E /* HeadingTitleView.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -215,7 +237,8 @@
 		DE4A56002A0A4E2D0071F7BC /* Modifiers */ = {
 			isa = PBXGroup;
 			children = (
-				DE4A56012A0A4E4D0071F7BC /* RoundedBorderModifier.swift */,
+				DEEC39802A0AC3D900D36AB1 /* RoundedRectangleModifier.swift */,
+				DEEC39822A0AC42400D36AB1 /* RoundedBorderedModifier.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -255,6 +278,23 @@
 				DE4A565C2A0A5FC70071F7BC /* lokomond.xcdatamodeld */,
 			);
 			path = CDEntities;
+			sourceTree = "<group>";
+		};
+		DEEC39862A0AC70C00D36AB1 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				DEEC39872A0AC71200D36AB1 /* RatePage */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		DEEC39872A0AC71200D36AB1 /* RatePage */ = {
+			isa = PBXGroup;
+			children = (
+				DEEC39882A0AC71E00D36AB1 /* RatePageViewModel.swift */,
+				DEEC398A2A0AC72800D36AB1 /* RatePageView.swift */,
+			);
+			path = RatePage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,6 +365,7 @@
 				DE4A55D62A0A442E0071F7BC /* Satoshi-Medium.otf in Resources */,
 				DE4A55D32A0A442E0071F7BC /* Satoshi-Bold.otf in Resources */,
 				DE4A55B52A0A3FB70071F7BC /* Assets.xcassets in Resources */,
+				DEEC397D2A0ABF4900D36AB1 /* ColorAssets.xcassets in Resources */,
 				DE4A55D72A0A442E0071F7BC /* Satoshi-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,6 +378,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE4A56632A0A604C0071F7BC /* RateCDEntity+CoreDataProperties.swift in Sources */,
+				DEEC398B2A0AC72800D36AB1 /* RatePageView.swift in Sources */,
 				DE4A565B2A0A5F8B0071F7BC /* FetchResultController.swift in Sources */,
 				DE4A55FA2A0A4D440071F7BC /* PageLoadState.swift in Sources */,
 				DE4A55B32A0A3FB60071F7BC /* ContentView.swift in Sources */,
@@ -346,17 +388,23 @@
 				DE4A55FC2A0A4D440071F7BC /* BamaProgressView.swift in Sources */,
 				DE4A55ED2A0A4C8A0071F7BC /* GateWays.swift in Sources */,
 				DE4A55C52A0A42EB0071F7BC /* Images.swift in Sources */,
+				DEEC397B2A0ABF0A00D36AB1 /* CurrencyRowView.swift in Sources */,
 				DE4A56422A0A5A8F0071F7BC /* Persistence.swift in Sources */,
 				DE4A55EF2A0A4C8A0071F7BC /* HTTPMethod.swift in Sources */,
+				DEEC397F2A0AC01600D36AB1 /* Colors.swift in Sources */,
+				DEEC39812A0AC3D900D36AB1 /* RoundedRectangleModifier.swift in Sources */,
+				DEEC39832A0AC42400D36AB1 /* RoundedBorderedModifier.swift in Sources */,
 				DE4A565E2A0A5FC70071F7BC /* lokomond.xcdatamodeld in Sources */,
+				DEEC39892A0AC71E00D36AB1 /* RatePageViewModel.swift in Sources */,
 				DE4A55C22A0A41B40071F7BC /* Fonts.swift in Sources */,
 				DE4A55EE2A0A4C8A0071F7BC /* URLSession++APITask.swift in Sources */,
 				DE4A55F02A0A4C8A0071F7BC /* API.swift in Sources */,
 				DE4A55B12A0A3FB60071F7BC /* Lokomond_Code_ChallangeApp.swift in Sources */,
 				DE4A55FB2A0A4D440071F7BC /* ErrorView.swift in Sources */,
-				DE4A56022A0A4E4D0071F7BC /* RoundedBorderModifier.swift in Sources */,
 				DE4A56622A0A604C0071F7BC /* RateCDEntity+CoreDataClass.swift in Sources */,
 				DE4A55F12A0A4C8A0071F7BC /* NetworkError.swift in Sources */,
+				DE3920832A0AC9960087BA6E /* HeadingTitleView.swift in Sources */,
+				DEEC39852A0AC65900D36AB1 /* StatusView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
