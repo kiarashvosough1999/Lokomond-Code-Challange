@@ -16,7 +16,18 @@
 		DE4A55D32A0A442E0071F7BC /* Satoshi-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = DE4A55C92A0A442D0071F7BC /* Satoshi-Bold.otf */; };
 		DE4A55D62A0A442E0071F7BC /* Satoshi-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = DE4A55CC2A0A442D0071F7BC /* Satoshi-Medium.otf */; };
 		DE4A55D72A0A442E0071F7BC /* Satoshi-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = DE4A55CD2A0A442D0071F7BC /* Satoshi-Regular.otf */; };
-		DE4A55DC2A0A44810071F7BC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE4A55DB2A0A44810071F7BC /* Info.plist */; };
+		DE4A55EC2A0A4C8A0071F7BC /* StatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4A55E32A0A4C8A0071F7BC /* StatusCode.swift */; };
+		DE4A55ED2A0A4C8A0071F7BC /* GateWays.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4A55E42A0A4C8A0071F7BC /* GateWays.swift */; };
+		DE4A55EE2A0A4C8A0071F7BC /* URLSession++APITask.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4A55E52A0A4C8A0071F7BC /* URLSession++APITask.swift */; };
+		DE4A55EF2A0A4C8A0071F7BC /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4A55E62A0A4C8A0071F7BC /* HTTPMethod.swift */; };
+		DE4A55F02A0A4C8A0071F7BC /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4A55E72A0A4C8A0071F7BC /* API.swift */; };
+		DE4A55F12A0A4C8A0071F7BC /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4A55E82A0A4C8A0071F7BC /* NetworkError.swift */; };
+		DE4A55F22A0A4C8A0071F7BC /* NetworkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4A55E92A0A4C8A0071F7BC /* NetworkServices.swift */; };
+		DE4A55FA2A0A4D440071F7BC /* PageLoadState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4A55F72A0A4D440071F7BC /* PageLoadState.swift */; };
+		DE4A55FB2A0A4D440071F7BC /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4A55F82A0A4D440071F7BC /* ErrorView.swift */; };
+		DE4A55FC2A0A4D440071F7BC /* BamaProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4A55F92A0A4D440071F7BC /* BamaProgressView.swift */; };
+		DE4A55FF2A0A4D930071F7BC /* Dependencies in Frameworks */ = {isa = PBXBuildFile; productRef = DE4A55FE2A0A4D930071F7BC /* Dependencies */; };
+		DE4A56022A0A4E4D0071F7BC /* RoundedBorderModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4A56012A0A4E4D0071F7BC /* RoundedBorderModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +42,17 @@
 		DE4A55C92A0A442D0071F7BC /* Satoshi-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Bold.otf"; sourceTree = "<group>"; };
 		DE4A55CC2A0A442D0071F7BC /* Satoshi-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Medium.otf"; sourceTree = "<group>"; };
 		DE4A55CD2A0A442D0071F7BC /* Satoshi-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Regular.otf"; sourceTree = "<group>"; };
-		DE4A55DB2A0A44810071F7BC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE4A55E32A0A4C8A0071F7BC /* StatusCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusCode.swift; sourceTree = "<group>"; };
+		DE4A55E42A0A4C8A0071F7BC /* GateWays.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GateWays.swift; sourceTree = "<group>"; };
+		DE4A55E52A0A4C8A0071F7BC /* URLSession++APITask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLSession++APITask.swift"; sourceTree = "<group>"; };
+		DE4A55E62A0A4C8A0071F7BC /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		DE4A55E72A0A4C8A0071F7BC /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		DE4A55E82A0A4C8A0071F7BC /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		DE4A55E92A0A4C8A0071F7BC /* NetworkServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkServices.swift; sourceTree = "<group>"; };
+		DE4A55F72A0A4D440071F7BC /* PageLoadState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageLoadState.swift; sourceTree = "<group>"; };
+		DE4A55F82A0A4D440071F7BC /* ErrorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		DE4A55F92A0A4D440071F7BC /* BamaProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BamaProgressView.swift; sourceTree = "<group>"; };
+		DE4A56012A0A4E4D0071F7BC /* RoundedBorderModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedBorderModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE4A55FF2A0A4D930071F7BC /* Dependencies in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,7 +86,8 @@
 		DE4A55AF2A0A3FB60071F7BC /* Lokomond-Code-Challange */ = {
 			isa = PBXGroup;
 			children = (
-				DE4A55DB2A0A44810071F7BC /* Info.plist */,
+				DE4A55F52A0A4D270071F7BC /* Presentation */,
+				DE4A55DF2A0A4C710071F7BC /* DataLayer */,
 				DE4A55BF2A0A419A0071F7BC /* DesignSystem */,
 				DE4A55B02A0A3FB60071F7BC /* Lokomond_Code_ChallangeApp.swift */,
 				DE4A55B22A0A3FB60071F7BC /* ContentView.swift */,
@@ -119,6 +142,79 @@
 			path = OTF;
 			sourceTree = "<group>";
 		};
+		DE4A55DF2A0A4C710071F7BC /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				DE4A55E02A0A4C7B0071F7BC /* DataSources */,
+			);
+			path = DataLayer;
+			sourceTree = "<group>";
+		};
+		DE4A55E02A0A4C7B0071F7BC /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				DE4A55E12A0A4C8A0071F7BC /* Network */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		DE4A55E12A0A4C8A0071F7BC /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				DE4A55E22A0A4C8A0071F7BC /* Utils */,
+				DE4A55E92A0A4C8A0071F7BC /* NetworkServices.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		DE4A55E22A0A4C8A0071F7BC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DE4A55E32A0A4C8A0071F7BC /* StatusCode.swift */,
+				DE4A55E42A0A4C8A0071F7BC /* GateWays.swift */,
+				DE4A55E52A0A4C8A0071F7BC /* URLSession++APITask.swift */,
+				DE4A55E62A0A4C8A0071F7BC /* HTTPMethod.swift */,
+				DE4A55E72A0A4C8A0071F7BC /* API.swift */,
+				DE4A55E82A0A4C8A0071F7BC /* NetworkError.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		DE4A55F52A0A4D270071F7BC /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				DE4A56032A0A4F6C0071F7BC /* Components */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		DE4A55F62A0A4D340071F7BC /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				DE4A55F92A0A4D440071F7BC /* BamaProgressView.swift */,
+				DE4A55F82A0A4D440071F7BC /* ErrorView.swift */,
+				DE4A55F72A0A4D440071F7BC /* PageLoadState.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		DE4A56002A0A4E2D0071F7BC /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				DE4A56012A0A4E4D0071F7BC /* RoundedBorderModifier.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		DE4A56032A0A4F6C0071F7BC /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				DE4A56002A0A4E2D0071F7BC /* Modifiers */,
+				DE4A55F62A0A4D340071F7BC /* Subviews */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +231,9 @@
 			dependencies = (
 			);
 			name = "Lokomond-Code-Challange";
+			packageProductDependencies = (
+				DE4A55FE2A0A4D930071F7BC /* Dependencies */,
+			);
 			productName = "Lokomond-Code-Challange";
 			productReference = DE4A55AD2A0A3FB60071F7BC /* Lokomond-Code-Challange.app */;
 			productType = "com.apple.product-type.application";
@@ -163,6 +262,9 @@
 				Base,
 			);
 			mainGroup = DE4A55A42A0A3FB60071F7BC;
+			packageReferences = (
+				DE4A55FD2A0A4D930071F7BC /* XCRemoteSwiftPackageReference "swift-dependencies" */,
+			);
 			productRefGroup = DE4A55AE2A0A3FB60071F7BC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -182,7 +284,6 @@
 				DE4A55D32A0A442E0071F7BC /* Satoshi-Bold.otf in Resources */,
 				DE4A55B52A0A3FB70071F7BC /* Assets.xcassets in Resources */,
 				DE4A55D72A0A442E0071F7BC /* Satoshi-Regular.otf in Resources */,
-				DE4A55DC2A0A44810071F7BC /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,10 +294,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE4A55FA2A0A4D440071F7BC /* PageLoadState.swift in Sources */,
 				DE4A55B32A0A3FB60071F7BC /* ContentView.swift in Sources */,
+				DE4A55F22A0A4C8A0071F7BC /* NetworkServices.swift in Sources */,
+				DE4A55EC2A0A4C8A0071F7BC /* StatusCode.swift in Sources */,
+				DE4A55FC2A0A4D440071F7BC /* BamaProgressView.swift in Sources */,
+				DE4A55ED2A0A4C8A0071F7BC /* GateWays.swift in Sources */,
 				DE4A55C52A0A42EB0071F7BC /* Images.swift in Sources */,
+				DE4A55EF2A0A4C8A0071F7BC /* HTTPMethod.swift in Sources */,
 				DE4A55C22A0A41B40071F7BC /* Fonts.swift in Sources */,
+				DE4A55EE2A0A4C8A0071F7BC /* URLSession++APITask.swift in Sources */,
+				DE4A55F02A0A4C8A0071F7BC /* API.swift in Sources */,
 				DE4A55B12A0A3FB60071F7BC /* Lokomond_Code_ChallangeApp.swift in Sources */,
+				DE4A55FB2A0A4D440071F7BC /* ErrorView.swift in Sources */,
+				DE4A56022A0A4E4D0071F7BC /* RoundedBorderModifier.swift in Sources */,
+				DE4A55F12A0A4C8A0071F7BC /* NetworkError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +522,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DE4A55FD2A0A4D930071F7BC /* XCRemoteSwiftPackageReference "swift-dependencies" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-dependencies";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DE4A55FE2A0A4D930071F7BC /* Dependencies */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE4A55FD2A0A4D930071F7BC /* XCRemoteSwiftPackageReference "swift-dependencies" */;
+			productName = Dependencies;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DE4A55A52A0A3FB60071F7BC /* Project object */;
 }
