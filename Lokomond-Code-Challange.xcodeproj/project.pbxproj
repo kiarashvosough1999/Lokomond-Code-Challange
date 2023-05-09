@@ -11,6 +11,12 @@
 		DE4A55B32A0A3FB60071F7BC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4A55B22A0A3FB60071F7BC /* ContentView.swift */; };
 		DE4A55B52A0A3FB70071F7BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE4A55B42A0A3FB70071F7BC /* Assets.xcassets */; };
 		DE4A55B92A0A3FB70071F7BC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE4A55B82A0A3FB70071F7BC /* Preview Assets.xcassets */; };
+		DE4A55C22A0A41B40071F7BC /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4A55C12A0A41B40071F7BC /* Fonts.swift */; };
+		DE4A55C52A0A42EB0071F7BC /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4A55C42A0A42EB0071F7BC /* Images.swift */; };
+		DE4A55D32A0A442E0071F7BC /* Satoshi-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = DE4A55C92A0A442D0071F7BC /* Satoshi-Bold.otf */; };
+		DE4A55D62A0A442E0071F7BC /* Satoshi-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = DE4A55CC2A0A442D0071F7BC /* Satoshi-Medium.otf */; };
+		DE4A55D72A0A442E0071F7BC /* Satoshi-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = DE4A55CD2A0A442D0071F7BC /* Satoshi-Regular.otf */; };
+		DE4A55DC2A0A44810071F7BC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE4A55DB2A0A44810071F7BC /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +26,12 @@
 		DE4A55B42A0A3FB70071F7BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE4A55B62A0A3FB70071F7BC /* Lokomond_Code_Challange.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Lokomond_Code_Challange.entitlements; sourceTree = "<group>"; };
 		DE4A55B82A0A3FB70071F7BC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DE4A55C12A0A41B40071F7BC /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		DE4A55C42A0A42EB0071F7BC /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		DE4A55C92A0A442D0071F7BC /* Satoshi-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Bold.otf"; sourceTree = "<group>"; };
+		DE4A55CC2A0A442D0071F7BC /* Satoshi-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Medium.otf"; sourceTree = "<group>"; };
+		DE4A55CD2A0A442D0071F7BC /* Satoshi-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Satoshi-Regular.otf"; sourceTree = "<group>"; };
+		DE4A55DB2A0A44810071F7BC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,9 +64,10 @@
 		DE4A55AF2A0A3FB60071F7BC /* Lokomond-Code-Challange */ = {
 			isa = PBXGroup;
 			children = (
+				DE4A55DB2A0A44810071F7BC /* Info.plist */,
+				DE4A55BF2A0A419A0071F7BC /* DesignSystem */,
 				DE4A55B02A0A3FB60071F7BC /* Lokomond_Code_ChallangeApp.swift */,
 				DE4A55B22A0A3FB60071F7BC /* ContentView.swift */,
-				DE4A55B42A0A3FB70071F7BC /* Assets.xcassets */,
 				DE4A55B62A0A3FB70071F7BC /* Lokomond_Code_Challange.entitlements */,
 				DE4A55B72A0A3FB70071F7BC /* Preview Content */,
 			);
@@ -67,6 +80,43 @@
 				DE4A55B82A0A3FB70071F7BC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DE4A55BF2A0A419A0071F7BC /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				DE4A55C32A0A42D00071F7BC /* Images */,
+				DE4A55C02A0A41AB0071F7BC /* Fonts */,
+				DE4A55B42A0A3FB70071F7BC /* Assets.xcassets */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		DE4A55C02A0A41AB0071F7BC /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				DE4A55C62A0A44210071F7BC /* OTF */,
+				DE4A55C12A0A41B40071F7BC /* Fonts.swift */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		DE4A55C32A0A42D00071F7BC /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				DE4A55C42A0A42EB0071F7BC /* Images.swift */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		DE4A55C62A0A44210071F7BC /* OTF */ = {
+			isa = PBXGroup;
+			children = (
+				DE4A55C92A0A442D0071F7BC /* Satoshi-Bold.otf */,
+				DE4A55CC2A0A442D0071F7BC /* Satoshi-Medium.otf */,
+				DE4A55CD2A0A442D0071F7BC /* Satoshi-Regular.otf */,
+			);
+			path = OTF;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,7 +178,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE4A55B92A0A3FB70071F7BC /* Preview Assets.xcassets in Resources */,
+				DE4A55D62A0A442E0071F7BC /* Satoshi-Medium.otf in Resources */,
+				DE4A55D32A0A442E0071F7BC /* Satoshi-Bold.otf in Resources */,
 				DE4A55B52A0A3FB70071F7BC /* Assets.xcassets in Resources */,
+				DE4A55D72A0A442E0071F7BC /* Satoshi-Regular.otf in Resources */,
+				DE4A55DC2A0A44810071F7BC /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +194,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE4A55B32A0A3FB60071F7BC /* ContentView.swift in Sources */,
+				DE4A55C52A0A42EB0071F7BC /* Images.swift in Sources */,
+				DE4A55C22A0A41B40071F7BC /* Fonts.swift in Sources */,
 				DE4A55B12A0A3FB60071F7BC /* Lokomond_Code_ChallangeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
