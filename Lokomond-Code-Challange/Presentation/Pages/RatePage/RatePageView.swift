@@ -23,6 +23,9 @@ internal struct RatePageView: View {
             StatusView(text: Date().description)
         }
         .padding(.top, 26)
+        .task {
+            await viewModel.start()
+        }
     }
 }
 
