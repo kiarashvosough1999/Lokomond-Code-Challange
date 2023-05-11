@@ -21,7 +21,7 @@ jobs:
       run: |
         xcodebuild -scheme Lokomond-Code-Challange -destination '${{ matrix.destination }}' build
     
-    - name: Build On ${{ matrix.name }}
+    - name: Test On ${{ matrix.name }}
       continue-on-error: false
       run: |
         xcodebuild -scheme Lokomond-Code-Challange -destination '${{ matrix.destination }}' test
