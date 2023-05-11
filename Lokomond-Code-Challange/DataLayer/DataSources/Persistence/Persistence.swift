@@ -7,7 +7,7 @@
 
 import CoreData
 
-internal struct PersistenceController {
+internal final class PersistenceController {
     
     internal enum PersistenceError: Error {
         case requestedItemNotFound
@@ -18,9 +18,12 @@ internal struct PersistenceController {
     internal var viewContext: NSManagedObjectContext {
         container.viewContext
     }
+
+    internal var fetchControllers: [String: FetchResultControllerProtocol]
     
     private init(inMemory: Bool = false) {
-        container = NSPersistentContainer(name: "code_challange")
+        container = NSPersistentContainer(name: "lokomond")
+        self.fetchControllers = [:]
         if inMemory {
             container.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null")
         }
