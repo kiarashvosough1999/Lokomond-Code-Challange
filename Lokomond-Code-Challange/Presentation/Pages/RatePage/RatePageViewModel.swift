@@ -7,13 +7,19 @@
 
 import Foundation
 import Dependencies
+import Combine
 
 internal final class RatePageViewModel: ObservableObject {
-    @Published var rates: PageLoadState<[CurrencyRowViewModel]> = .loading
+
+    @Published var rates: PageLoadState<[CurrencyRowViewModel]>
 
     @Dependency(\.loadRatesUseCase) private var loadRatesUseCase
     @Dependency(\.observeRatesUseCase) private var observeRatesUseCase
 
+    internal init() {
+        self.rates = .loading
+    }
+    
     internal func start() async {
         observeRatesUseCase
             .observeRates()
@@ -24,9 +30,22 @@ internal final class RatePageViewModel: ObservableObject {
             }
             .map { PageLoadState.loaded($0) }
             .replaceEmpty(with: .loading)
+            .replaceError(with: .failed(message: "Failed To Load Try Again"))
             .receive(on: DispatchQueue.main)
             .assign(to: &$rates)
         try? await loadRatesUseCase.startLoading()
+    }
+
+    internal var lastUpdate: String {
+        "Last Updated" + DateFormatter(dateStyle: .medium, timeStyle: .short).string(from: Date())
+    }
+}
+
+extension DateFormatter {
+    convenience init(dateStyle: DateFormatter.Style,  timeStyle: DateFormatter.Style) {
+        self.init()
+        self.dateStyle = dateStyle
+        self.timeStyle = timeStyle
     }
 }
 

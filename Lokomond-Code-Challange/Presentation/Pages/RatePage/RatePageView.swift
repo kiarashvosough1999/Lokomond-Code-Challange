@@ -19,8 +19,11 @@ internal struct RatePageView: View {
                     CurrencyRowView(viewModel: rate)
                 }
             }
+            .onRetry {
+                await viewModel.start()
+            }
             Spacer()
-            StatusView(text: Date().description)
+            StatusView(text: viewModel.lastUpdate)
         }
         .padding(.top, 26)
         .task {

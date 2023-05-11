@@ -22,7 +22,7 @@ public final class LoadRatesUseCase {
     @Dependency(\.fetchRatesDbService) private var fetchRatesDbService
     @Dependency(\.persistRatesDBService) private var persistRatesDBService
 
-    private var refreshRate: TimeInterval { 5 }
+    private var refreshRate: TimeInterval { 60 * 2 } // every 2 minutes
     private var timer: Timer?
     private var ongoingTask: Bool = false
     private var lastTask: Task<Void, Never>?
