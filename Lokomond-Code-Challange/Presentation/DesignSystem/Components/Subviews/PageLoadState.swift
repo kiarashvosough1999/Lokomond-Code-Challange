@@ -12,6 +12,15 @@ public enum PageLoadState<Model: Equatable>: Equatable {
     case loaded(Model)
     case loading
     case failed(message: String)
+
+    public var loadedValue: Model? {
+        switch self {
+        case .loaded(let model):
+            return model
+        case .loading, .failed:
+            return nil
+        }
+    }
 }
 
 public struct WithLoadingState<Content, Model>: View where Content: View, Model: Equatable {
@@ -33,7 +42,7 @@ public struct WithLoadingState<Content, Model>: View where Content: View, Model:
         case .loaded(let model):
             onLoaded(model)
         case .loading:
-            BamaProgressView()
+            AppProgressView()
         case .failed(let message):
             ErrorView(message: message) {
                 await onRetry?()
