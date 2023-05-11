@@ -5,7 +5,7 @@
 //  Created by Kiarash Vosough on 5/9/23.
 //
 
-public struct Rate {
+public struct RateEntity {
     public let symbol: String
     public let price: Double
 
@@ -16,13 +16,13 @@ public struct Rate {
 }
 
 // MARK: - Hashable
-extension Rate: Hashable {}
+extension RateEntity: Hashable {}
 
 // MARK: - Codable
-extension Rate: Codable {}
+extension RateEntity: Codable {}
 
 // MARK: - Identifiable
-extension Rate: Identifiable {
+extension RateEntity: Identifiable {
     public var id: Int {
         hashValue
     }

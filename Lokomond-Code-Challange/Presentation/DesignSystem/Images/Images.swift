@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-internal enum Images: String {
+public enum Images: String {
     case AUDCAD
     case EURUSD
     case GBPJPY

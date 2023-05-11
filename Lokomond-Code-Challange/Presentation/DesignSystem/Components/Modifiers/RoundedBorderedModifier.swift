@@ -1,5 +1,5 @@
 //
-//  RoundedBorderModifier.swift
+//  RoundedBorderedModifier.swift
 //  Lokomond-Code-Challange
 //
 //  Created by Kiarash Vosough on 5/9/23.
@@ -9,12 +9,12 @@ import SwiftUI
 
 extension View {
 
-    func roundBordered(corderColor: Color = .blue) -> some View {
-        self.modifier(RoundedBorderModifier(corderColor: corderColor))
+    func roundBordered(corderColor: Color = Color(.primary_white)) -> some View {
+        self.modifier(RoundedBorderedModifier(corderColor: corderColor))
     }
 }
 
-private struct RoundedBorderModifier: ViewModifier {
+private struct RoundedBorderedModifier: ViewModifier {
 
     private let corderColor: Color
 
@@ -27,7 +27,7 @@ private struct RoundedBorderModifier: ViewModifier {
             .overlay {
                 ZStack {
                     Color.gray.opacity(0.05)
-                    RoundedRectangle(cornerRadius: 10)
+                    RoundedRectangle(cornerRadius: 16)
                         .stroke(lineWidth: 1)
                         .foregroundColor(corderColor)
                 }
@@ -36,11 +36,11 @@ private struct RoundedBorderModifier: ViewModifier {
 }
 
 #if DEBUG
-struct RoundedBorderModifier_Previews: PreviewProvider {
+struct RoundedBorderedModifier_Previews: PreviewProvider {
     static var previews: some View {
         Text("Hello, world!")
             .padding()
-            .modifier(RoundedBorderModifier(corderColor: .blue))
+            .roundRectangle()
     }
 }
 #endif

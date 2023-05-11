@@ -8,7 +8,7 @@
 import Foundation
 
 public enum GateWays: String {
-    case base = "https://jsonplaceholder.typicode.com"
+    case base = "https://lokomond.com/"
 }
 
 extension GateWays {

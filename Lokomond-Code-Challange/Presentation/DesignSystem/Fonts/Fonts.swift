@@ -8,6 +8,13 @@
 import SwiftUI
 import Foundation
 
+extension SwiftUI.Text {
+
+    internal func appFont(_ font: CTFont) -> some View {
+        self.font(Font(font))
+    }
+}
+
 extension CTFont {
     fileprivate static func font(_ type: Fonts.FontType, size: CGFloat) -> CTFont {
         CTFont(type.cFString, size: size)
@@ -36,14 +43,14 @@ internal struct Fonts {
     }
 
     struct Title {
-        static let bold = CTFont.font(.bold, size: headingsSize)
+        static let bold = CTFont.font(.bold, size: titleSize)
     }
 
     struct SmallSubtitle {
-        static let bold = CTFont.font(.regular, size: overlineSize)
+        static let regular = CTFont.font(.regular, size: overlineSize)
     }
 
     struct Body {
-        static let medium = CTFont.font(.medium, size: headingsSize)
+        static let medium = CTFont.font(.medium, size: bodySize)
     }
 }

@@ -7,8 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE0269EA2A0C4FF40022A9EA /* PersistRatesServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0269E92A0C4FF40022A9EA /* PersistRatesServiceProtocol.swift */; };
+		DE0269EC2A0C500D0022A9EA /* PersistenceController++PersistRatesServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0269EB2A0C500D0022A9EA /* PersistenceController++PersistRatesServiceProtocol.swift */; };
+		DE3920832A0AC9960087BA6E /* HeadingTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3920822A0AC9960087BA6E /* HeadingTitleView.swift */; };
+		DE421C342A0BB38D000A89B6 /* LoadRatesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE421C332A0BB38D000A89B6 /* LoadRatesUseCase.swift */; };
+		DE421C372A0BB56E000A89B6 /* FetchRatesServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE421C362A0BB56E000A89B6 /* FetchRatesServiceProtocol.swift */; };
+		DE421C392A0BB5AF000A89B6 /* NetworkServices++FetchRatesServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE421C382A0BB5AF000A89B6 /* NetworkServices++FetchRatesServiceProtocol.swift */; };
+		DE421C3C2A0BBC28000A89B6 /* RateCDEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE421C3A2A0BBC28000A89B6 /* RateCDEntity+CoreDataClass.swift */; };
+		DE421C3D2A0BBC28000A89B6 /* RateCDEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE421C3B2A0BBC28000A89B6 /* RateCDEntity+CoreDataProperties.swift */; };
+		DE421C422A0BBD7E000A89B6 /* FullRateInformationEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE421C412A0BBD7E000A89B6 /* FullRateInformationEntity.swift */; };
 		DE4A55B12A0A3FB60071F7BC /* Lokomond_Code_ChallangeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4A55B02A0A3FB60071F7BC /* Lokomond_Code_ChallangeApp.swift */; };
-		DE4A55B32A0A3FB60071F7BC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4A55B22A0A3FB60071F7BC /* ContentView.swift */; };
 		DE4A55B52A0A3FB70071F7BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE4A55B42A0A3FB70071F7BC /* Assets.xcassets */; };
 		DE4A55B92A0A3FB70071F7BC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE4A55B82A0A3FB70071F7BC /* Preview Assets.xcassets */; };
 		DE4A55C22A0A41B40071F7BC /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4A55C12A0A41B40071F7BC /* Fonts.swift */; };
@@ -25,21 +33,38 @@
 		DE4A55F22A0A4C8A0071F7BC /* NetworkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4A55E92A0A4C8A0071F7BC /* NetworkServices.swift */; };
 		DE4A55FA2A0A4D440071F7BC /* PageLoadState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4A55F72A0A4D440071F7BC /* PageLoadState.swift */; };
 		DE4A55FB2A0A4D440071F7BC /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4A55F82A0A4D440071F7BC /* ErrorView.swift */; };
-		DE4A55FC2A0A4D440071F7BC /* BamaProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4A55F92A0A4D440071F7BC /* BamaProgressView.swift */; };
+		DE4A55FC2A0A4D440071F7BC /* AppProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4A55F92A0A4D440071F7BC /* AppProgressView.swift */; };
 		DE4A55FF2A0A4D930071F7BC /* Dependencies in Frameworks */ = {isa = PBXBuildFile; productRef = DE4A55FE2A0A4D930071F7BC /* Dependencies */; };
-		DE4A56022A0A4E4D0071F7BC /* RoundedBorderModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4A56012A0A4E4D0071F7BC /* RoundedBorderModifier.swift */; };
 		DE4A56262A0A59130071F7BC /* RateEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4A56252A0A59130071F7BC /* RateEntity.swift */; };
 		DE4A56422A0A5A8F0071F7BC /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4A56292A0A5A8F0071F7BC /* Persistence.swift */; };
 		DE4A565B2A0A5F8B0071F7BC /* FetchResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4A565A2A0A5F8B0071F7BC /* FetchResultController.swift */; };
 		DE4A565E2A0A5FC70071F7BC /* lokomond.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DE4A565C2A0A5FC70071F7BC /* lokomond.xcdatamodeld */; };
-		DE4A56622A0A604C0071F7BC /* RateCDEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4A56602A0A604C0071F7BC /* RateCDEntity+CoreDataClass.swift */; };
-		DE4A56632A0A604C0071F7BC /* RateCDEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4A56612A0A604C0071F7BC /* RateCDEntity+CoreDataProperties.swift */; };
+		DE63C9592A0D04A0003A18CD /* PersistenceController++FetchRatesServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE63C9582A0D04A0003A18CD /* PersistenceController++FetchRatesServiceProtocol.swift */; };
+		DE63C95B2A0D0706003A18CD /* ObserveRatesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE63C95A2A0D0706003A18CD /* ObserveRatesUseCase.swift */; };
+		DE63C95D2A0D082D003A18CD /* ObserveRatesServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE63C95C2A0D082D003A18CD /* ObserveRatesServiceProtocol.swift */; };
+		DE63C95F2A0D08AA003A18CD /* FetchResultController++ObserveRatesServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE63C95E2A0D08AA003A18CD /* FetchResultController++ObserveRatesServiceProtocol.swift */; };
+		DEEC397B2A0ABF0A00D36AB1 /* CurrencyRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEC397A2A0ABF0A00D36AB1 /* CurrencyRowView.swift */; };
+		DEEC397D2A0ABF4900D36AB1 /* ColorAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEEC397C2A0ABF4900D36AB1 /* ColorAssets.xcassets */; };
+		DEEC397F2A0AC01600D36AB1 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEC397E2A0AC01600D36AB1 /* Colors.swift */; };
+		DEEC39812A0AC3D900D36AB1 /* RoundedRectangleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEC39802A0AC3D900D36AB1 /* RoundedRectangleModifier.swift */; };
+		DEEC39832A0AC42400D36AB1 /* RoundedBorderedModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEC39822A0AC42400D36AB1 /* RoundedBorderedModifier.swift */; };
+		DEEC39852A0AC65900D36AB1 /* StatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEC39842A0AC65900D36AB1 /* StatusView.swift */; };
+		DEEC39892A0AC71E00D36AB1 /* RatePageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEC39882A0AC71E00D36AB1 /* RatePageViewModel.swift */; };
+		DEEC398B2A0AC72800D36AB1 /* RatePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEC398A2A0AC72800D36AB1 /* RatePageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DE0269E92A0C4FF40022A9EA /* PersistRatesServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistRatesServiceProtocol.swift; sourceTree = "<group>"; };
+		DE0269EB2A0C500D0022A9EA /* PersistenceController++PersistRatesServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PersistenceController++PersistRatesServiceProtocol.swift"; sourceTree = "<group>"; };
+		DE3920822A0AC9960087BA6E /* HeadingTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingTitleView.swift; sourceTree = "<group>"; };
+		DE421C332A0BB38D000A89B6 /* LoadRatesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadRatesUseCase.swift; sourceTree = "<group>"; };
+		DE421C362A0BB56E000A89B6 /* FetchRatesServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchRatesServiceProtocol.swift; sourceTree = "<group>"; };
+		DE421C382A0BB5AF000A89B6 /* NetworkServices++FetchRatesServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkServices++FetchRatesServiceProtocol.swift"; sourceTree = "<group>"; };
+		DE421C3A2A0BBC28000A89B6 /* RateCDEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RateCDEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DE421C3B2A0BBC28000A89B6 /* RateCDEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RateCDEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DE421C412A0BBD7E000A89B6 /* FullRateInformationEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullRateInformationEntity.swift; sourceTree = "<group>"; };
 		DE4A55AD2A0A3FB60071F7BC /* Lokomond-Code-Challange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lokomond-Code-Challange.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE4A55B02A0A3FB60071F7BC /* Lokomond_Code_ChallangeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lokomond_Code_ChallangeApp.swift; sourceTree = "<group>"; };
-		DE4A55B22A0A3FB60071F7BC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DE4A55B42A0A3FB70071F7BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE4A55B62A0A3FB70071F7BC /* Lokomond_Code_Challange.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Lokomond_Code_Challange.entitlements; sourceTree = "<group>"; };
 		DE4A55B82A0A3FB70071F7BC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -57,14 +82,23 @@
 		DE4A55E92A0A4C8A0071F7BC /* NetworkServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkServices.swift; sourceTree = "<group>"; };
 		DE4A55F72A0A4D440071F7BC /* PageLoadState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageLoadState.swift; sourceTree = "<group>"; };
 		DE4A55F82A0A4D440071F7BC /* ErrorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
-		DE4A55F92A0A4D440071F7BC /* BamaProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BamaProgressView.swift; sourceTree = "<group>"; };
-		DE4A56012A0A4E4D0071F7BC /* RoundedBorderModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedBorderModifier.swift; sourceTree = "<group>"; };
+		DE4A55F92A0A4D440071F7BC /* AppProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppProgressView.swift; sourceTree = "<group>"; };
 		DE4A56252A0A59130071F7BC /* RateEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateEntity.swift; sourceTree = "<group>"; };
 		DE4A56292A0A5A8F0071F7BC /* Persistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		DE4A565A2A0A5F8B0071F7BC /* FetchResultController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchResultController.swift; sourceTree = "<group>"; };
 		DE4A565D2A0A5FC70071F7BC /* lokomond.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = lokomond.xcdatamodel; sourceTree = "<group>"; };
-		DE4A56602A0A604C0071F7BC /* RateCDEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RateCDEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
-		DE4A56612A0A604C0071F7BC /* RateCDEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RateCDEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DE63C9582A0D04A0003A18CD /* PersistenceController++FetchRatesServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PersistenceController++FetchRatesServiceProtocol.swift"; sourceTree = "<group>"; };
+		DE63C95A2A0D0706003A18CD /* ObserveRatesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserveRatesUseCase.swift; sourceTree = "<group>"; };
+		DE63C95C2A0D082D003A18CD /* ObserveRatesServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserveRatesServiceProtocol.swift; sourceTree = "<group>"; };
+		DE63C95E2A0D08AA003A18CD /* FetchResultController++ObserveRatesServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FetchResultController++ObserveRatesServiceProtocol.swift"; sourceTree = "<group>"; };
+		DEEC397A2A0ABF0A00D36AB1 /* CurrencyRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRowView.swift; sourceTree = "<group>"; };
+		DEEC397C2A0ABF4900D36AB1 /* ColorAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ColorAssets.xcassets; sourceTree = "<group>"; };
+		DEEC397E2A0AC01600D36AB1 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		DEEC39802A0AC3D900D36AB1 /* RoundedRectangleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedRectangleModifier.swift; sourceTree = "<group>"; };
+		DEEC39822A0AC42400D36AB1 /* RoundedBorderedModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedBorderedModifier.swift; sourceTree = "<group>"; };
+		DEEC39842A0AC65900D36AB1 /* StatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusView.swift; sourceTree = "<group>"; };
+		DEEC39882A0AC71E00D36AB1 /* RatePageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatePageViewModel.swift; sourceTree = "<group>"; };
+		DEEC398A2A0AC72800D36AB1 /* RatePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatePageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +113,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DE421C322A0BB381000A89B6 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				DE421C352A0BB53B000A89B6 /* Services */,
+				DE421C332A0BB38D000A89B6 /* LoadRatesUseCase.swift */,
+				DE63C95A2A0D0706003A18CD /* ObserveRatesUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		DE421C352A0BB53B000A89B6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DE421C362A0BB56E000A89B6 /* FetchRatesServiceProtocol.swift */,
+				DE0269E92A0C4FF40022A9EA /* PersistRatesServiceProtocol.swift */,
+				DE63C95C2A0D082D003A18CD /* ObserveRatesServiceProtocol.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		DE4A55A42A0A3FB60071F7BC = {
 			isa = PBXGroup;
 			children = (
@@ -98,12 +152,11 @@
 		DE4A55AF2A0A3FB60071F7BC /* Lokomond-Code-Challange */ = {
 			isa = PBXGroup;
 			children = (
+				DE421C322A0BB381000A89B6 /* UseCases */,
 				DE4A56242A0A59040071F7BC /* Entities */,
 				DE4A55F52A0A4D270071F7BC /* Presentation */,
 				DE4A55DF2A0A4C710071F7BC /* DataLayer */,
-				DE4A55BF2A0A419A0071F7BC /* DesignSystem */,
 				DE4A55B02A0A3FB60071F7BC /* Lokomond_Code_ChallangeApp.swift */,
-				DE4A55B22A0A3FB60071F7BC /* ContentView.swift */,
 				DE4A55B62A0A3FB70071F7BC /* Lokomond_Code_Challange.entitlements */,
 				DE4A55B72A0A3FB70071F7BC /* Preview Content */,
 			);
@@ -121,9 +174,12 @@
 		DE4A55BF2A0A419A0071F7BC /* DesignSystem */ = {
 			isa = PBXGroup;
 			children = (
+				DE4A56032A0A4F6C0071F7BC /* Components */,
 				DE4A55C32A0A42D00071F7BC /* Images */,
 				DE4A55C02A0A41AB0071F7BC /* Fonts */,
 				DE4A55B42A0A3FB70071F7BC /* Assets.xcassets */,
+				DEEC397C2A0ABF4900D36AB1 /* ColorAssets.xcassets */,
+				DEEC397E2A0AC01600D36AB1 /* Colors.swift */,
 			);
 			path = DesignSystem;
 			sourceTree = "<group>";
@@ -177,6 +233,7 @@
 			children = (
 				DE4A55E22A0A4C8A0071F7BC /* Utils */,
 				DE4A55E92A0A4C8A0071F7BC /* NetworkServices.swift */,
+				DE421C382A0BB5AF000A89B6 /* NetworkServices++FetchRatesServiceProtocol.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -197,7 +254,8 @@
 		DE4A55F52A0A4D270071F7BC /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				DE4A56032A0A4F6C0071F7BC /* Components */,
+				DEEC39862A0AC70C00D36AB1 /* Pages */,
+				DE4A55BF2A0A419A0071F7BC /* DesignSystem */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -205,9 +263,12 @@
 		DE4A55F62A0A4D340071F7BC /* Subviews */ = {
 			isa = PBXGroup;
 			children = (
-				DE4A55F92A0A4D440071F7BC /* BamaProgressView.swift */,
+				DE4A55F92A0A4D440071F7BC /* AppProgressView.swift */,
 				DE4A55F82A0A4D440071F7BC /* ErrorView.swift */,
 				DE4A55F72A0A4D440071F7BC /* PageLoadState.swift */,
+				DEEC397A2A0ABF0A00D36AB1 /* CurrencyRowView.swift */,
+				DEEC39842A0AC65900D36AB1 /* StatusView.swift */,
+				DE3920822A0AC9960087BA6E /* HeadingTitleView.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -215,7 +276,8 @@
 		DE4A56002A0A4E2D0071F7BC /* Modifiers */ = {
 			isa = PBXGroup;
 			children = (
-				DE4A56012A0A4E4D0071F7BC /* RoundedBorderModifier.swift */,
+				DEEC39802A0AC3D900D36AB1 /* RoundedRectangleModifier.swift */,
+				DEEC39822A0AC42400D36AB1 /* RoundedBorderedModifier.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -233,6 +295,7 @@
 			isa = PBXGroup;
 			children = (
 				DE4A56252A0A59130071F7BC /* RateEntity.swift */,
+				DE421C412A0BBD7E000A89B6 /* FullRateInformationEntity.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -243,6 +306,9 @@
 				DE4A565F2A0A602A0071F7BC /* CDEntities */,
 				DE4A56292A0A5A8F0071F7BC /* Persistence.swift */,
 				DE4A565A2A0A5F8B0071F7BC /* FetchResultController.swift */,
+				DE0269EB2A0C500D0022A9EA /* PersistenceController++PersistRatesServiceProtocol.swift */,
+				DE63C9582A0D04A0003A18CD /* PersistenceController++FetchRatesServiceProtocol.swift */,
+				DE63C95E2A0D08AA003A18CD /* FetchResultController++ObserveRatesServiceProtocol.swift */,
 			);
 			path = Persistence;
 			sourceTree = "<group>";
@@ -250,11 +316,28 @@
 		DE4A565F2A0A602A0071F7BC /* CDEntities */ = {
 			isa = PBXGroup;
 			children = (
-				DE4A56602A0A604C0071F7BC /* RateCDEntity+CoreDataClass.swift */,
-				DE4A56612A0A604C0071F7BC /* RateCDEntity+CoreDataProperties.swift */,
+				DE421C3A2A0BBC28000A89B6 /* RateCDEntity+CoreDataClass.swift */,
+				DE421C3B2A0BBC28000A89B6 /* RateCDEntity+CoreDataProperties.swift */,
 				DE4A565C2A0A5FC70071F7BC /* lokomond.xcdatamodeld */,
 			);
 			path = CDEntities;
+			sourceTree = "<group>";
+		};
+		DEEC39862A0AC70C00D36AB1 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				DEEC39872A0AC71200D36AB1 /* RatePage */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		DEEC39872A0AC71200D36AB1 /* RatePage */ = {
+			isa = PBXGroup;
+			children = (
+				DEEC39882A0AC71E00D36AB1 /* RatePageViewModel.swift */,
+				DEEC398A2A0AC72800D36AB1 /* RatePageView.swift */,
+			);
+			path = RatePage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,6 +408,7 @@
 				DE4A55D62A0A442E0071F7BC /* Satoshi-Medium.otf in Resources */,
 				DE4A55D32A0A442E0071F7BC /* Satoshi-Bold.otf in Resources */,
 				DE4A55B52A0A3FB70071F7BC /* Assets.xcassets in Resources */,
+				DEEC397D2A0ABF4900D36AB1 /* ColorAssets.xcassets in Resources */,
 				DE4A55D72A0A442E0071F7BC /* Satoshi-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,27 +420,43 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE4A56632A0A604C0071F7BC /* RateCDEntity+CoreDataProperties.swift in Sources */,
+				DEEC398B2A0AC72800D36AB1 /* RatePageView.swift in Sources */,
+				DE63C95F2A0D08AA003A18CD /* FetchResultController++ObserveRatesServiceProtocol.swift in Sources */,
 				DE4A565B2A0A5F8B0071F7BC /* FetchResultController.swift in Sources */,
 				DE4A55FA2A0A4D440071F7BC /* PageLoadState.swift in Sources */,
-				DE4A55B32A0A3FB60071F7BC /* ContentView.swift in Sources */,
+				DE0269EC2A0C500D0022A9EA /* PersistenceController++PersistRatesServiceProtocol.swift in Sources */,
 				DE4A55F22A0A4C8A0071F7BC /* NetworkServices.swift in Sources */,
+				DE421C372A0BB56E000A89B6 /* FetchRatesServiceProtocol.swift in Sources */,
 				DE4A55EC2A0A4C8A0071F7BC /* StatusCode.swift in Sources */,
+				DE421C422A0BBD7E000A89B6 /* FullRateInformationEntity.swift in Sources */,
 				DE4A56262A0A59130071F7BC /* RateEntity.swift in Sources */,
-				DE4A55FC2A0A4D440071F7BC /* BamaProgressView.swift in Sources */,
+				DE4A55FC2A0A4D440071F7BC /* AppProgressView.swift in Sources */,
 				DE4A55ED2A0A4C8A0071F7BC /* GateWays.swift in Sources */,
 				DE4A55C52A0A42EB0071F7BC /* Images.swift in Sources */,
+				DEEC397B2A0ABF0A00D36AB1 /* CurrencyRowView.swift in Sources */,
 				DE4A56422A0A5A8F0071F7BC /* Persistence.swift in Sources */,
 				DE4A55EF2A0A4C8A0071F7BC /* HTTPMethod.swift in Sources */,
+				DE421C392A0BB5AF000A89B6 /* NetworkServices++FetchRatesServiceProtocol.swift in Sources */,
+				DE421C3D2A0BBC28000A89B6 /* RateCDEntity+CoreDataProperties.swift in Sources */,
+				DEEC397F2A0AC01600D36AB1 /* Colors.swift in Sources */,
+				DE63C9592A0D04A0003A18CD /* PersistenceController++FetchRatesServiceProtocol.swift in Sources */,
+				DEEC39812A0AC3D900D36AB1 /* RoundedRectangleModifier.swift in Sources */,
+				DE63C95D2A0D082D003A18CD /* ObserveRatesServiceProtocol.swift in Sources */,
+				DEEC39832A0AC42400D36AB1 /* RoundedBorderedModifier.swift in Sources */,
 				DE4A565E2A0A5FC70071F7BC /* lokomond.xcdatamodeld in Sources */,
+				DE63C95B2A0D0706003A18CD /* ObserveRatesUseCase.swift in Sources */,
+				DE0269EA2A0C4FF40022A9EA /* PersistRatesServiceProtocol.swift in Sources */,
+				DEEC39892A0AC71E00D36AB1 /* RatePageViewModel.swift in Sources */,
 				DE4A55C22A0A41B40071F7BC /* Fonts.swift in Sources */,
 				DE4A55EE2A0A4C8A0071F7BC /* URLSession++APITask.swift in Sources */,
 				DE4A55F02A0A4C8A0071F7BC /* API.swift in Sources */,
 				DE4A55B12A0A3FB60071F7BC /* Lokomond_Code_ChallangeApp.swift in Sources */,
 				DE4A55FB2A0A4D440071F7BC /* ErrorView.swift in Sources */,
-				DE4A56022A0A4E4D0071F7BC /* RoundedBorderModifier.swift in Sources */,
-				DE4A56622A0A604C0071F7BC /* RateCDEntity+CoreDataClass.swift in Sources */,
 				DE4A55F12A0A4C8A0071F7BC /* NetworkError.swift in Sources */,
+				DE3920832A0AC9960087BA6E /* HeadingTitleView.swift in Sources */,
+				DE421C342A0BB38D000A89B6 /* LoadRatesUseCase.swift in Sources */,
+				DE421C3C2A0BBC28000A89B6 /* RateCDEntity+CoreDataClass.swift in Sources */,
+				DEEC39852A0AC65900D36AB1 /* StatusView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

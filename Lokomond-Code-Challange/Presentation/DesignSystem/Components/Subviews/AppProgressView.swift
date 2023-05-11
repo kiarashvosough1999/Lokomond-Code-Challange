@@ -1,5 +1,5 @@
 //
-//  BamaProgressView.swift
+//  AppProgressView.swift
 //  Lokomond-Code-Challange
 //
 //  Created by Kiarash Vosough on 5/9/23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-public struct BamaProgressView: View {
+public struct AppProgressView: View {
     
     public var body: some View {
         ProgressView()
@@ -20,7 +20,7 @@ public struct BamaProgressView: View {
 #if DEBUG
 struct BamaProgressView_Previews: PreviewProvider {
     static var previews: some View {
-        BamaProgressView()
+        AppProgressView()
     }
 }
 #endif
