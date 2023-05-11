@@ -1,0 +1,27 @@
+[
+  {
+    "symbol" : "test",
+    "price" : 0,
+    "onIncrease" : false
+  },
+  {
+    "symbol" : "test1",
+    "price" : 1,
+    "onIncrease" : true
+  },
+  {
+    "symbol" : "test2",
+    "price" : 2,
+    "onIncrease" : false
+  },
+  {
+    "symbol" : "test3",
+    "price" : 3,
+    "onIncrease" : true
+  },
+  {
+    "symbol" : "test4",
+    "price" : 4,
+    "onIncrease" : true
+  }
+]

@@ -21,6 +21,8 @@ public final class ObserveRatesUseCase {
     fileprivate static let shared = ObserveRatesUseCase()
     
     @Dependency(\.observeRatesDBService) private var observeRatesDBService
+
+    public init() {}
 }
 
 extension ObserveRatesUseCase: ObserveRatesUseCaseProtocol {
@@ -30,6 +32,7 @@ extension ObserveRatesUseCase: ObserveRatesUseCaseProtocol {
 }
 
 // MARK: Preview
+
 #if DEBUG
 public final class ObserveRatesUseCasePreview {
 }
