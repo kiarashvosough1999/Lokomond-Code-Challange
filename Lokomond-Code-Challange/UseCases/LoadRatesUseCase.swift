@@ -18,14 +18,18 @@ public final class LoadRatesUseCase {
 
     fileprivate static let shared = LoadRatesUseCase()
 
-    @Dependency(\.fetchRatesRemoteService) private var fetchRatesService
+    @Dependency(\.fetchRatesRemoteService) private var fetchRatesRemoteService
     @Dependency(\.fetchRatesDbService) private var fetchRatesDbService
     @Dependency(\.persistRatesDBService) private var persistRatesDBService
 
     private var refreshRate: TimeInterval { 60 * 2 } // every 2 minutes
     private var timer: Timer?
-    private var ongoingTask: Bool = false
+    private var ongoingTask: Bool
     private var lastTask: Task<Void, Never>?
+
+    public init() {
+        self.ongoingTask = false
+    }
 }
 
 extension LoadRatesUseCase: LoadRatesUseCaseProtocol {
@@ -45,7 +49,7 @@ extension LoadRatesUseCase: LoadRatesUseCaseProtocol {
         let areRateAvailable = try await persistRatesDBService.areRateAvailable()
         // we should first fetch some data and then update them
         if areRateAvailable == false {
-            let rates = try await self.fetchRatesService.loadRates()
+            let rates = try await self.fetchRatesRemoteService.loadRates()
             try await self.persistRatesDBService.persistRates(rates: rates)
 
         }
@@ -55,6 +59,7 @@ extension LoadRatesUseCase: LoadRatesUseCaseProtocol {
 
     @MainActor
     func scehduleTimer() {
+        timerInovocation()
         timer = Timer.scheduledTimer(
             timeInterval: refreshRate,
             target: self,
@@ -79,7 +84,7 @@ extension LoadRatesUseCase: LoadRatesUseCaseProtocol {
 
         guard Task.isCancelled == false else { return }
 
-        let newRates = try await self.fetchRatesService.loadRates()
+        let newRates = try await self.fetchRatesRemoteService.loadRates()
 
         guard Task.isCancelled == false else { return }
 
@@ -101,8 +106,7 @@ extension LoadRatesUseCase: LoadRatesUseCaseProtocol {
 // MARK: Preview
 
 #if DEBUG
-public final class LoadRatesPreviewUseCase {
-}
+public final class LoadRatesPreviewUseCase {}
 
 extension LoadRatesPreviewUseCase: LoadRatesUseCaseProtocol {
     public func startLoading() async throws {}
