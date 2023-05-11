@@ -2,7 +2,7 @@
 //  RateCDEntity+CoreDataProperties.swift
 //  Lokomond-Code-Challange
 //
-//  Created by Kiarash Vosough on 5/9/23.
+//  Created by Kiarash Vosough on 5/10/23.
 //
 //
 
@@ -18,6 +18,7 @@ extension RateCDEntity {
 
     @NSManaged public var price: Double
     @NSManaged public var symbol: String?
+    @NSManaged public var onIncrease: Bool
 
 }
 
